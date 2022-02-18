@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <title>Protected area</title>
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+
+	<script>
+
+		window.addEventListener("load", ()=>{
+			document.querySelector(".LOGOUT").addEventListener("click",()=>{
+				document.cookie = 'SKEY=; Max-Age=0'
+				window.location.reload()
+			})
+		})	
+	</script>
+</head>
+
+<body>
+	<div class="uk-container">
+		<form>
+			<fieldset class="uk-fieldset uk-margin-top">
+		
+				<legend class="uk-legend">Sei loggato!</legend>
+		
+				<button class="uk-button uk-button-primary LOGOUT">LOGOUT</button>				
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

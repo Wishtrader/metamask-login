@@ -1,0 +1,15 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "web3": "^1.7.0",    
+  }
+}
